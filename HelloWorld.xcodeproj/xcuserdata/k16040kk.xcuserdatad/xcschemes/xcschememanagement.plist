@@ -44,6 +44,11 @@
 			<key>orderHint</key>
 			<integer>13</integer>
 		</dict>
+		<key>print_chessboard.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>19</integer>
+		</dict>
 		<key>print_frame.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -88,6 +93,11 @@
 		<dict>
 			<key>orderHint</key>
 			<integer>6</integer>
+		</dict>
+		<key>structured_programing.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>20</integer>
 		</dict>
 		<key>swapping2numbers.xcscheme</key>
 		<dict>
@@ -203,6 +213,16 @@
 			<true/>
 		</dict>
 		<key>0FF5ACED20B52B96003C9682</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0FF5ACF820B7A762003C9682</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0FF5AD0320B7B0A2003C9682</key>
 		<dict>
 			<key>primary</key>
 			<true/>
