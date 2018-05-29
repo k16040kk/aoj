@@ -1,0 +1,61 @@
+//
+//  main.c
+//  finding_missing_cards1.5
+//
+//  Created by k16040kk on 2018/05/26.
+//  Copyright © 2018年 AIT. All rights reserved.
+//
+
+#include <stdio.h>
+
+int main() {
+    
+    int n,i,j;
+    int card[4][13];
+    int num;
+    long long moji;
+    
+    scanf("%d", &n);
+    
+    for(j=0; j<4; j++) {
+        for(i=0; i<13 ;i++){
+            card[j][i] = 0;
+        }
+    }
+    
+    for(i=0; i<2*n ; i++) {
+        scanf("%c ",&moji);
+        scanf("%d",&num);
+        if(moji == 'S') {
+            card[0][num-1] = 1;
+        } else if(moji == 'H') {
+            card[1][num-1] = 1;
+        } else if(moji == 'C') {
+            card[2][num-1] = 1;
+        } else if(moji =='D') {
+            card[3][num-1] = 1;
+        }
+    }
+    
+    for(j=1;j<=13;j++) {
+        if(card[0][j-1] != 1) {
+            printf("S %d\n",j);
+        }
+    }
+    for(j=1;j<=13;j++) {
+        if(card[1][j-1] != 1) {
+            printf("H %d\n",j);
+        }
+    }
+    for(j=1;j<=13;j++) {
+        if(card[2][j-1] != 1) {
+            printf("C %d\n",j);
+        }
+    }
+    for(j=1;j<=13;j++) {
+        if(card[3][j-1] != 1) {
+            printf("D %d\n",j);
+        }
+    }
+    return 0;
+}
